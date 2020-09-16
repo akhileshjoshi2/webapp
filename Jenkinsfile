@@ -24,7 +24,7 @@ pipeline {
             steps {
            sshagent(['tomcat']) {
                 sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@54.91.246.140:/prod/apache-tomcat-8.5.57/webapps/webapp.war'
-                //sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@54.175.162.201:~/prod/apache-tomcat-8.5.57/webapps/webapp.war'
+                //sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@54.175.162.201:/home/ubuntu/prod/apache-tomcat-8.5.58/webapps/webapp.war'
               }      
            }       
     }
